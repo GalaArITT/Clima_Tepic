@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oliver.clima_tepic.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="325dp"
+        android:layout_height="387dp"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tv_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Principal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_hum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Humedad"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_temp_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura Minima:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_temp_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura Maxima:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_visib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visibilidad (metros):"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_wind_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Velocidad del Viento"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_nubes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nubes (%):"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sunrise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amanecer (ms):"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sunset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Puesta del sol (ms):"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="País"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad:"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="36dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="?android:attr/actionModeFindDrawable"
+        android:layout_marginEnd="8dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="143dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="37dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
+
+</android.support.constraint.ConstraintLayout>
